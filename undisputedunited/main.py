@@ -22,7 +22,7 @@ def main():
 
 def build_datasets():
     historic_df = HistoricResultParser().parse('undisputedunited/data/top_four_leagues_1888_2020.csv')
-    current_df = CurrentSeasonResultParser().parse('https://fixturedownload.com/download/epl-2020-GMTStandardTime.csv')
+    current_df = CurrentSeasonResultParser().parse('https://fixturedownload.com/download/epl-2021-GMTStandardTime.csv')
     return pd.concat([historic_df, current_df])
 
 
